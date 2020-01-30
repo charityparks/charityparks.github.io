@@ -18,7 +18,7 @@ params[:id] to 13.
 
 Example:  
 
-<h1>Add a Podcast</h1>
+#<h1>Add a Podcast</h1>
 
 <form action="/podcasts" method="post">
 <br>
@@ -30,7 +30,7 @@ Example:
 <br>
 <button type="submit">Add Podcast</button>
 
-</form>
+</form>#
 
 The params this form creates are the podcast[name] and podcast[host]
 
