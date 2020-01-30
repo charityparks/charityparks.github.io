@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Params!...say again? "
-date:       2020-01-30 21:37:32 +0000
+date:       2020-01-30 16:37:33 -0500
 permalink:  params_say_again
 ---
 
@@ -15,6 +15,24 @@ Params values can be accessed from a GET request query, or in the form data of a
 
 Example:  get '/photo/:id'... then the request to a URL like this:  http://charitysphotos.cm/photos/13 .. this will set 
 params[:id] to 13.
+
+Example:  
+
+<h1>Add a Podcast</h1>
+
+<form action="/podcasts" method="post">
+<br>
+<label>Podcast Name:</label>
+<input type="text" name="name">
+
+<label>Host:</label>
+<input type="text" name="host">
+<br>
+<button type="submit">Add Podcast</button>
+
+</form>
+
+The params this form creates are the podcast[name] and podcast[host]
 
 In conclusion, params is a hash that Sinatra has made available so that you can use the in your routes and it will include the data you've requested.
 
