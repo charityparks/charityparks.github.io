@@ -18,7 +18,8 @@ params[:id] to 13.
 
 Example:  
 
-#<h1>Add a Podcast</h1>
+
+<h1>Add a Podcast</h1>
 
 <form action="/podcasts" method="post">
 <br>
@@ -30,9 +31,11 @@ Example:
 <br>
 <button type="submit">Add Podcast</button>
 
-</form>#
+</form>
 
-The params this form creates are the podcast[name] and podcast[host]
+The params this form creates are the podcast[name] and podcast[host].
+
+Params is a hash so... key = podcast[name] and the value =  (info supplied by user)
 
 In conclusion, params is a hash that Sinatra has made available so that you can use the in your routes and it will include the data you've requested.
 
